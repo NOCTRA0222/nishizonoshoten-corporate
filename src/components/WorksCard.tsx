@@ -5,14 +5,14 @@ type WorksCardProps = WorkEntry;
 
 export function WorksTeaser({ title, category, description }: WorkEntry) {
   return (
-    <li className="py-3">
+    <li className="py-4">
       <div className="flex flex-wrap items-start justify-between gap-2">
-        <h3 className="text-sm font-semibold leading-snug text-charcoal">
+        <h3 className="text-sm font-semibold leading-relaxed text-charcoal sm:text-base">
           {title}
         </h3>
         <CategoryTag category={category} size="sm" />
       </div>
-      <p className="mt-1 line-clamp-1 text-sm leading-relaxed text-charcoal/70">
+      <p className="mt-1 line-clamp-2 text-sm leading-relaxed text-charcoal/70">
         {description}
       </p>
     </li>

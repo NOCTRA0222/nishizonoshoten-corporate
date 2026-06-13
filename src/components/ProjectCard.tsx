@@ -12,7 +12,7 @@ export function NoctraProjectCard() {
           {noctraProject.name}
         </h3>
         <span className="rounded-full bg-slate-blue/10 px-3 py-1 text-xs font-medium text-slate-blue">
-          {enabled ? "公開中" : "準備中"}
+          {enabled ? "公開中" : "自社実践"}
         </span>
       </div>
       <p className="mt-1 text-sm text-slate-blue">{noctraProject.tagline}</p>
@@ -30,7 +30,7 @@ export function NoctraProjectCard() {
         </Link>
       ) : (
         <p className="mt-4 text-sm text-charcoal/50">
-          公開準備が整い次第、リンクを掲載します。
+          ブランドサイトは準備が整い次第、公開情報を整理して掲載します。
         </p>
       )}
     </article>
