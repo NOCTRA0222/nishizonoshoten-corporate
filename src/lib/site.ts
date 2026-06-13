@@ -46,72 +46,72 @@ export type WorkEntry = {
 
 export const works: WorkEntry[] = [
   {
-    title: "TikTok Shop 発送フロー自動化",
+    title: "EC発送フロー整理",
     category: "automation",
-    status: "自社・運用中",
+    status: "自社内で運用",
     description:
-      "受注から発送までの作業をスプレッドシートと GAS でつなぎ、転記と確認の手間を削減。発送漏れを防ぎ、日次の出荷作業を仕組み化しています。",
+      "受注から発送までの確認作業をスプレッドシートで整理し、転記や確認漏れを減らす流れを整えています。",
     featured: true,
   },
   {
     title: "不良品報告・管理システム",
     category: "automation",
-    status: "構築・運用",
+    status: "自社内で運用",
     description:
-      "不良品の報告から記録・集計までをフォームとスプレッドシートで一元管理。報告漏れと対応のばらつきを減らし、品質管理を可視化します。",
+      "不良品の報告から記録・集計までをフォームとスプレッドシートで一元管理し、対応のばらつきを減らす形にしています。",
     featured: true,
   },
   {
     title: "SNS 投稿管理・運用基盤",
     category: "ec",
-    status: "自社・運用中",
+    status: "自社内で運用",
     description:
-      "投稿スケジュール・文案・状態をスプレッドシートで管理。X / Threads など媒体別の進捗を一画面で把握し、属人化した投稿運用を整理します。",
+      "投稿スケジュール、文案、進行状況をスプレッドシートで管理し、発信作業を続けやすい形に整理しています。",
     featured: true,
   },
   {
     title: "Dropbox フォルダ整理・命名規則",
     category: "automation",
-    status: "構築・運用",
+    status: "整理中",
     description:
-      "事業ごとのフォルダ構成とファイル命名ルールを定義し、素材・書類・エクスポートデータの置き場所を統一。探す時間と重複保存を削減します。",
+      "事業ごとのフォルダ構成とファイル命名ルールを整理し、素材や書類の置き場所を迷いにくくしています。",
     featured: true,
   },
   {
     title: "GAS スプレッドシート業務自動化",
     category: "automation",
-    status: "構築・運用",
+    status: "自社内で検証",
     description:
-      "Google Apps Script でシート作成・書式設定・データ検証を自動化。手作業での表組みや入力ミスを減らし、更新しやすい運用台帳を構築します。",
+      "Google Apps Script を使い、シート作成や書式設定などの手作業を減らす方法を自社内で検証しています。",
   },
-  {
-    title: "SNS 向け画像リサイズ自動化",
-    category: "content",
-    status: "自社・運用中",
-    description:
-      "書き出しフォルダを監視し、TikTok・Instagram・X など媒体別サイズへ一括変換。手作業のトリミングと書き出しを省き、投稿素材の準備時間を短縮します。",
-  },
-  {
-    title: "Lightroom 現像 → 書き出しパイプライン",
-    category: "content",
-    status: "構築・運用",
-    description:
-      "RAW 取り込みから現像プリセット・書き出し設定までを標準化。撮影データを SNS 加工ラインへスムーズに流し、品質とスピードを両立します。",
-  },
-  {
-    title: "NOCTRA SNS 運用スプレッドシート整備",
-    category: "ec",
-    status: "構築・運用",
-    description:
-      "年間イベントカレンダー・ブランドコピーガイド・投稿ネタバンクを GAS で自動生成。ブランドトーンのばらつきを抑え、企画から投稿までの判断材料を整理します。",
-  },
-  {
-    title: "AI 支援コンテンツ制作フロー",
-    category: "ai",
-    status: "自社・運用中",
-    description:
-      "ブランド憲法と投稿マスターをプロンプト化し、文案・企画の下書きを AI で支援。人の判断を残しつつ、制作と更新のスピードを上げます。",
-  },
+  // {
+  //   title: "SNS 向け画像リサイズ自動化",
+  //   category: "content",
+  //   status: "自社内で運用",
+  //   description:
+  //     "媒体別サイズへの変換など、投稿素材の準備を効率化するための取り組みです。",
+  // },
+  // {
+  //   title: "画像現像・書き出しフロー整理",
+  //   category: "content",
+  //   status: "整理中",
+  //   description:
+  //     "撮影データの現像、書き出し、素材管理を続けやすくするための取り組みです。",
+  // },
+  // {
+  //   title: "自社EC向けSNS運用スプレッドシート整備",
+  //   category: "ec",
+  //   status: "整理中",
+  //   description:
+  //     "投稿テーマやスケジュールなどを整理し、判断材料をまとめるための取り組みです。",
+  // },
+  // {
+  //   title: "AI支援コンテンツ制作フロー",
+  //   category: "ai",
+  //   status: "検証中",
+  //   description:
+  //     "文案や企画の下書きをAIで補助し、人の確認を残しながら制作を進めるための取り組みです。",
+  // },
 ];
 
 export function getSiteUrl(): string {
@@ -125,7 +125,7 @@ export function getGformUrl(): string {
   );
 }
 
-export function getNoctraUrl(): string {
+export function getSelfEcUrl(): string {
   return process.env.NEXT_PUBLIC_NOCTRA_URL ?? "https://noctra.online";
 }
 
@@ -133,7 +133,7 @@ export function getGaId(): string | undefined {
   return process.env.NEXT_PUBLIC_GA_ID;
 }
 
-export function isNoctraEnabled(): boolean {
+export function isSelfEcEnabled(): boolean {
   return process.env.NEXT_PUBLIC_NOCTRA_ENABLED === "true";
 }
 
@@ -215,11 +215,11 @@ export const businessLines = [
   "コンテンツ制作（必要に応じた画像・バナー・SNS 等の支援）",
 ] as const;
 
-export const noctraProject = {
-  name: "NOCTRA",
-  tagline: "ペット向けアパレル EC — 自社実践プロジェクト",
+export const selfEcProject = {
+  name: "自社ECプロジェクト",
+  tagline: "EC運営と業務整理の自社実践",
   description:
-    "NOCTRAは、西園商店が運営準備を進めているペット向けアパレルECです。商品企画、EC運営、業務整理、自動化、AI活用を自社で実践するプロジェクトとして位置づけています。ここで得た実践知を、今後の業務改善や仕組み化にも活かしていきます。",
+    "西園商店では、自社のEC運営を通じて、商品企画、業務整理、自動化、AI活用の流れを少しずつ整えています。公開できる範囲で、そこで得た実践知を業務改善や仕組み化にも活かしていきます。",
 } as const;
 
 export const operatorProfile = {

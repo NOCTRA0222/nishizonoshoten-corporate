@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ButtonLink } from "@/components/ButtonLink";
-import { NoctraProjectCard } from "@/components/ProjectCard";
+import { SelfEcProjectCard } from "@/components/ProjectCard";
 import { Section } from "@/components/Section";
 import { ServiceCard } from "@/components/ServiceCard";
 import { SystemFlow } from "@/components/SystemFlow";
@@ -175,11 +175,11 @@ export default function HomePage() {
 
         <Section
           title="プロジェクト"
-          subtitle="自社で EC 運営と自動化を実践しているブランド・事業です。"
+          subtitle="自社内で EC 運営と自動化を試しながら整えている取り組みです。"
           divided
         >
           <div className="max-w-xl">
-            <NoctraProjectCard />
+            <SelfEcProjectCard />
           </div>
           <p className="mt-6">
             <Link
