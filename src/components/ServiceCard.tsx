@@ -24,7 +24,7 @@ export function ServiceCard({
       <div className="flex flex-wrap items-center gap-2">
         <h3 className="text-lg font-semibold text-charcoal">{title}</h3>
         {secondary ? (
-          <span className="rounded-full bg-clay/10 px-2.5 py-1 text-xs font-medium text-clay">
+          <span className="rounded-full bg-charcoal/5 px-2.5 py-1 text-xs font-medium text-charcoal/60">
             支援領域
           </span>
         ) : null}
