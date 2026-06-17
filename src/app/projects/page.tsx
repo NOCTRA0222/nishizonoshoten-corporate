@@ -7,7 +7,7 @@ import { site, works } from "@/lib/site";
 export const metadata: Metadata = {
   title: "プロジェクト",
   description:
-    "西園商店のプロジェクト。自社EC運営や業務自動化、SNS運用など、自社内で整えている仕組みを掲載します。",
+    "西園商店が取り組む、自社ペットアパレルブランド NOCTRA のEC運営に加え、業務自動化・SNS運用など、自社内で整えている仕組みを掲載します。",
 };
 
 export default function ProjectsPage() {

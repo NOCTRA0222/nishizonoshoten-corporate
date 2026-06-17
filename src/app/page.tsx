@@ -175,7 +175,7 @@ export default function HomePage() {
 
         <Section
           title="プロジェクト"
-          subtitle="自社内で EC 運営と自動化を試しながら整えている取り組みです。"
+          subtitle="自社ペットアパレルブランド NOCTRA など、自社EC運営と自動化を試しながら整えている取り組みです。"
           divided
         >
           <div className="max-w-xl">

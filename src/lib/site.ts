@@ -216,10 +216,10 @@ export const businessLines = [
 ] as const;
 
 export const selfEcProject = {
-  name: "自社ECプロジェクト",
-  tagline: "EC運営と業務整理の自社実践",
+  name: "自社ペットアパレルブランド NOCTRA",
+  tagline: "ペット向けアパレルEC — 西園商店の自社実践",
   description:
-    "西園商店では、自社のEC運営を通じて、商品企画、業務整理、自動化、AI活用の流れを少しずつ整えています。公開できる範囲で、そこで得た実践知を業務改善や仕組み化にも活かしていきます。",
+    "NOCTRAは、西園商店が運営する自社ペットアパレルブランドです。商品企画、EC運営、SNS発信、業務整理を自社で実践しながら、運営の仕組みを整えています。",
 } as const;
 
 export const operatorProfile = {
