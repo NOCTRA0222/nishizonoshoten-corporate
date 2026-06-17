@@ -126,7 +126,7 @@ export function getGformUrl(): string {
 }
 
 export function getSelfEcUrl(): string {
-  return process.env.NEXT_PUBLIC_NOCTRA_URL ?? "https://noctra.online";
+  return process.env.NEXT_PUBLIC_NOCTRA_URL ?? "https://www.noctra.online";
 }
 
 export function getGaId(): string | undefined {
